@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  #404040;
+        }
+        button{
+            height: 50px;
+            width: 400px;
+            background-color: #404040;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px blue;
+        }
+        #div{
+            border: 2px solid;
+            width: 410px;
+            padding: 20px;
+            margin-left: 500px;
+            margin-top: 175px;
+            background-color:  #809fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px white;
+        }
+        button:hover {
+            box-shadow: 0px 0px 15px white;
+        }
+    </style>
+    <script>
+            function fun(ref)
+            {
+                if(ref==="R20"){
+                    window.open("http://becbapatla.ac.in:8080/STUDENTINFO/index_r20.html")
+                }
+                else if(ref==="R18"){
+                    window.open("http://becbapatla.ac.in:8080/STUDENTINFO/index_r18.html")
+                }
+                else{
+                    window.open("http://becbapatla.ac.in:8080/STUDENTINFO/index.html")
+                }
+            }
+    </script>
+</head>
+<body>
+        <div id="div">
+            <h3 style="text-align:center;">CHOOSE REGULATION</h3>
+            <h1><button onclick="fun('R20')" >R20</button></h1>
+            <h1><button onclick="fun('R18')">R18</button></h1>
+            <h1><button onclick="fun('OTHER')">R10 & R14</button></h1>
+        </div>
+</body>
+</html>
